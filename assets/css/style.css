@@ -285,7 +285,7 @@ input[type="email"]
     padding: 8px;
     width: 100%;
     border:none;   
-    color: lightgrey;    
+    color: black;  
 }
 
 .adressm{
@@ -299,13 +299,13 @@ input[type="email"]
 input[type="submit"] 
 {
     text-align: center;
-    border-style:solid;
     border-radius: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: medium;
+    font-weight: solid;
+    font-size: 20px;
     background-color: rgb(216, 250, 250);
     width: 100%;
-    padding: 8px
+    padding: 8px;
 }
 
 .form1{
@@ -327,9 +327,10 @@ input[type="submit"]
 }
 
 .social_handles>img:hover{
-    width: 57px;
+    width: 60px;
     text-decoration: underline 2px white;
     text-underline-offset: 10px;
+    
 
 }
 
