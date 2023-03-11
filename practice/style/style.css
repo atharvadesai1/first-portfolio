@@ -1,0 +1,104 @@
+
+form {
+    /* background-color: #dffab6ef; */
+    background-image: url("/imagess/LR5ab.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    margin: 25px;
+    padding: 35px;
+    border-radius: 10px;
+} 
+
+.payment_form{
+    font-size: 50px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: navy;
+    text-shadow:2px 2px rgb(174, 219, 235);
+    text-decoration: dotted;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"]
+{
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    border:none;       
+}
+
+select{
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%; 
+    border: none;
+}
+
+.adressm{
+    border:none; 
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%; 
+
+}
+
+input[type="submit"] 
+{
+    text-align: center;
+    border-style:solid;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    background-color: rgb(216, 250, 250);
+    width: 100%;
+    padding: 8px
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(252, 252, 210);
+}
+
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-variant:initial;
+    text-shadow:1px 2px rgb(195, 181, 181);
+    text-overflow: clip;
+    font-size: 30px;
+
+}
+
+fieldset{
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+button{
+    text-align: center;
+    background-color: lightyellow;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 9px;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgb(213, 245, 213)
+}
+
+.along{
+    color: black !important;
+    background-color: black !important;
+}
+
+nav{
+    color: black !important;
+}
