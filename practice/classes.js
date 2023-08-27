@@ -41,6 +41,8 @@ class Product{
         return this.itemName + " is a product";
     }
 }
+let object = new Product('Table')
+console.log(object);
 
 class Furniture extends Product{
     constructor(itemName){
@@ -54,6 +56,7 @@ class Furniture extends Product{
 
 let chair = new Furniture('Chair');
 console.log(chair);
+console.log(chair.getItemName());
 
 
 
@@ -87,7 +90,37 @@ let mobile = new Product3('mobile',20000,'2/10/22','Vivo',15);
 console.log(mobile);
 console.log(mobile.discountedPrice);
 // console.log(mobile.priceAmount);
-console.log(mobile);
+console.log(mobile); 
+
+
+///////OBJECTS EXAMPLE FOR PRACTICE/////
+let objectDetail = {
+    itemName: "Pen Drive",
+    price: "600 rs",
+    discount: "2%",
+    itemCode: "asdf456",
+    thanking(){
+        console.log("Thank you for purchasing");
+    }
+}
+
+console.log(objectDetail);
+console.log(objectDetail.thanking());
+
+function createObject(itemName,price,discount,itemCode){
+    this.itemName = itemName;
+    this.price = price;
+    this.discount = discount;
+    this.itemCode = itemCode;
+    let canCalculate = (this.price - (this.price*this.discount/100));
+    this.priceAfterDiscount = function(){
+        return canCalculate;
+    }
+}
+
+let mobilett = new createObject("IPhone14", 100000, 10, 'APPLE14QWE');
+console.log(mobilett);
+console.log(mobilett.priceAfterDiscount());
 
 
 

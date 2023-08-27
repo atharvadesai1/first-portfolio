@@ -27,9 +27,7 @@
 }
 
 body{
-    margin: 0px;
-    background-image: url("/imagess1/Black\ &\ Yellow\ Geometric\ Business\ Facebook\ Cover\ \(2\).png") !important;
-    background-repeat: no-repeat;
+    background-color: black;
 }
 
 .normalh{
@@ -62,7 +60,7 @@ body{
 
 
 .navbar-nav{
-    color: black !important;
+    color: blue !important;
     float: right !important;   
     padding-top: 10px; 
 }
@@ -101,6 +99,116 @@ p{
     padding-bottom: 20px !important;
     font-family: header1;
     font-size: 60px;
+}
+
+@media only screen and (max-width:400px){
+    .section_head{
+        color: white;
+        font-family: header1;
+        font-size: 80px;
+    
+
+    }
+    .starter{
+        width: 700px;
+        margin-bottom: 200px;
+    }
+
+    #intro_text{
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    #img_ele{
+        /* float: right; */
+        position: absolute;
+        top: 300px;
+        right: 20px;
+        /* bottom: 50px; */
+        /* width: 400px; */
+        z-index: -1;
+        width: 700px;
+        height: 800px;
+        margin-right: 0px;
+    }
+
+    .con_btn{
+        margin-top: 30px;
+    }
+
+    #Atharva{
+        margin: 0px;
+    }
+
+    .normalh{
+        color: white;
+        padding: 30px 90px;
+        margin-top: 0px;
+        /* padding-bottom: 20px !important; */
+        font-family: header2;
+        font-size: 100px;
+        text-decoration: underline 2px;
+        text-underline-offset: 10px;
+        text-decoration-color: rgb(111, 227, 111);;
+    }
+
+    .first{
+        width: 1500px;
+    }
+
+    .aboutme{
+        width: 1600px;
+    }
+
+
+    p{
+        font-size: 30px;
+    }
+
+    .progress{
+        width: 100%;
+    }
+
+    .achievements-active{
+        display:grid;
+        grid-template-columns: repeat(2,590px);
+        grid-gap:25px;
+        grid-auto-rows: minmax(250px,auto);
+        /* margin-left: 300px;
+        margin-right: 200px; */
+        /* position: relative;
+        left: 50px; */
+    }
+
+    .boxes{
+        width: 590px;
+    }
+
+    .form1{
+        margin: 50px;
+        position: relative;
+        left: 70px;
+    }
+
+    .reachout{
+        position: relative;
+        left: 60px;
+    }
+
+    .explore_more{
+        margin: 0px 130px;
+        color: rgb(219, 7, 219);
+        border:yellow 2px;
+        border-radius: 20px;
+        font-size: 30px;
+        padding:10px 20px;
+        transition: 0.4s;
+        text-decoration: none;
+        background-color: rgb(124, 87, 87);
+    }
+  
+    
+    
 }
 
 .explore_more{
@@ -205,13 +313,13 @@ main{
 }
 
 .image-one:hover{
-    width: 80px;
+    opacity: 0.7;
 }
 .image-two:hover{
-    width:130px;
+    opacity: 0.7;
 }
 .image-three:hover{
-    width:90px;
+    opacity: 0.7;
 }
 
 .achievements-active{
@@ -233,9 +341,7 @@ main{
     padding: 10px;
 }
 
-.boxes:hover{
-    transform: scale(1.05);
-}
+
 
 .boxes>h2{
     font-family: achievement;
@@ -331,9 +437,9 @@ input[type="submit"]
 }
 
 .social_handles>img:hover{
-    width: 60px;
     text-decoration: underline 2px white;
     text-underline-offset: 10px;
+    opacity: 0.7;
     
 
 }

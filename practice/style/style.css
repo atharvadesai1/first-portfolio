@@ -1,11 +1,11 @@
 
 form {
-    /* background-color: #dffab6ef; */
-    background-image: url("/imagess/LR5ab.png");
+    background-color: #dffab6ef;
+    /* background-image: url("/imagess/LR5ab.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     border-style: solid;
-    margin: 25px;
+    margin: 5px 250px;
     padding: 35px;
     border-radius: 10px;
 } 
@@ -16,7 +16,6 @@ form {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     color: navy;
     text-shadow:2px 2px rgb(174, 219, 235);
-    text-decoration: dotted;
 
 }
 
@@ -28,18 +27,20 @@ input[type="date"]
     border-radius: 5px;
     padding: 8px;
     width: 100%;
-    border:none;       
+    border:black;   
+    border-width: 5px;   
 }
 
 select{
     border-radius: 5px;
     padding: 8px;
     width: 100%; 
-    border: none;
+    border: black;
+    border-width: 5px;   
 }
 
 .adressm{
-    border:none; 
+    border:black; 
     border-radius: 5px;
     padding: 8px;
     width: 100%; 
@@ -101,4 +102,10 @@ button:hover{
 
 nav{
     color: black !important;
+}
+
+input[type="radio"]{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main_body{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(205, 245, 206);
+            border: solid black 2px;
+
+        }
+
+
+        #sidebar{
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #content{
+            border-left: black 2px solid;
+            border-collapse: collapse;
+        }
+
+        @media screen and (min-width: 1000px){
+            #sidemar ul li a:after{
+                content: " ("attr(data-email)")";
+                color: red;
+
+            }
+        }
+
+        @media screen and (max-width: 999px){
+            #sidemar ul li a:before{
+                content: url('imagess/mail.png');
+                color: blue;
+            }  
+        }
+
+        p{
+            padding: 15px;
+            color: rgb(83, 80, 80);
+        }
+
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            color: black;
+            
+
+        }
+
+        #address{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            padding: 1px;
+            text-align: center;
+            text-decoration: none;
+            color: darkslategrey !important;
+        }
+
+        li{
+            text-align: center;
+        }
+
+        ul{
+            padding: 0px 15px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Information Technology</h1>
+    <div id="main_body">
+        <div id="sidebar">
+        <ul style="list-style-type: none;">
+            <li id="address">EmailAddress</li><br>
+            <li><a data-email="desaiatharva50@gmail.com" href="mailto: desaiatharva50@gmail.com">Atharva Desai</a></li><br>
+            <li><a data-email="milind.n.desai76@gmail.com" href="mailto: milind.n.desai76@gmail.com">Milind Desai</a></li><br>
+            <li><a data-email="itsatharva.987@gmail.com" href="mailto: itsatharva.987@gmail.com">Mansi Desai</a></li>
+        </ul>     
+        </div>
+
+        <div id="content">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore earum autem provident dolor ratione!
+                Molestias, maxime reprehenderit perferendis nobis officiis voluptates qui sit voluptate facilis optio enim
+                ratione, necessitatibus fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eos consectetur similique illo distinctio aliquid delectus unde minima hic alias dolor itaque, quis tempora. Sint dolorem pariatur ipsa harum illum?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At fuga alias eius. Facere commodi earum blanditiis similique praesentium delectus eaque exercitationem veritatis, vel aspernatur tenetur placeat soluta repellendus consequatur! Eaque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro inventore accusamus ad, expedita ex consectetur ipsam voluptas fugiat perferendis ullam quidem aliquid eveniet? Accusamus ipsum itaque amet consectetur culpa.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, saepe? Neque illo eligendi dolorem esse, officiis porro nemo praesentium commodi id natus, in dicta. Similique nemo rem ut molestiae consectetur!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ipsam obcaecati illum totam quisquam, optio, rem praesentium magni repudiandae repellat error eveniet molestias? Maxime, veritatis similique ab facilis repellendus voluptatibus.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsa accusantium facilis laudantium rem, nemo, eos officiis ducimus nihil perferendis porro expedita? Doloribus unde voluptate dolor tempora inventore atque omnis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aperiam, quod eaque consequatur, aspernatur ipsam laborum soluta modi iusto nemo provident molestiae officiis corporis, quis perferendis dolorem alias magnam facilis!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
